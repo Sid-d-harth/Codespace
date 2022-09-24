@@ -6,50 +6,58 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 const Navigation = () => {
+// const Push=() => {
+//   const router = useRouter();
+//   useEffect(() => {
+//     router.push("/AllProblems");
+//   }, [router]);
+// }
   return (
     <div>
       <div className='navigation'>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="sm">
       <Container fluid>
-        <Navbar.Brand href="../../Home/Home.js">Codespace</Navbar.Brand>
+        <Navbar.Brand>Codespace</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
+            style={{ maxHeight: '150px' }}
             navbarScroll
           >
-            <Link  href="../../"><Nav.Link>Home</Nav.Link></Link>
-            <Link  href="../../practice/index.js"><Nav.Link>Practice</Nav.Link></Link>
+            <Link href={"/Home"}><Nav.Link>Home</Nav.Link></Link>
+            <Link href={"/practice"}><Nav.Link>Practice</Nav.Link></Link>
             <NavDropdown title="Resources" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">All Problems</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item>All Problems</NavDropdown.Item>
+              <NavDropdown.Item>
               Community
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item>
               Blog & Interview Guides
               </NavDropdown.Item>
             </NavDropdown>
-            <Link  href="../../index.js"><Nav.Link>About</Nav.Link></Link>
-            <Link  href="../../index.js"><Nav.Link>Contact</Nav.Link></Link>
+            <Link href={"/About"}><Nav.Link>About</Nav.Link></Link>
+            <Link href={"/Contact"}><Nav.Link>Contact</Nav.Link></Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
               className="me-2"
+              size='sm'
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="primary" size='sm'>Search</Button>{' '}
           </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
       </div>
-
     </div>
   )
 }
