@@ -29,20 +29,21 @@ const Navigation = () => {
             style={{ maxHeight: '150px' }}
             navbarScroll
           >
-            <Link href={"/Home"}><Nav.Link>Home</Nav.Link></Link>
-            <Link href={"/practice"}><Nav.Link>Practice</Nav.Link></Link>
-            <NavDropdown title="Resources" id="navbarScrollingDropdown">
-              <NavDropdown.Item>All Problems</NavDropdown.Item>
+            <Link href="/"><Nav.Link>Home</Nav.Link></Link>
+            <Link href="../../practice"><Nav.Link>Practice</Nav.Link></Link>
+            <NavDropdown title="AllProblems" id="navbarScrollingDropdown">
               <NavDropdown.Item>
-              Community
+              <Link href="../../AllProblems"><Nav.Link>SDE Sheet</Nav.Link></Link>
               </NavDropdown.Item>
+              <NavDropdown.Item>
+              <Link href="../../Community"><Nav.Link>Community</Nav.Link></Link>              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item>
               Blog & Interview Guides
               </NavDropdown.Item>
             </NavDropdown>
-            <Link href={"/About"}><Nav.Link>About</Nav.Link></Link>
-            <Link href={"/Contact"}><Nav.Link>Contact</Nav.Link></Link>
+            <Link href="../../About.js"><Nav.Link>About</Nav.Link></Link>
+            <Link href="../../connect"><Nav.Link>Contact</Nav.Link></Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

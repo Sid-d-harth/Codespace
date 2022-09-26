@@ -1,18 +1,11 @@
-import Navigation from "./Component/Navigation";
+import Navigation from "../Component/Navigation";
 
 const Community = () => {
   return (
     <>
     <Navigation/>
-    <h1>Community Section</h1>
-    <footer>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h1> we are on Community Section </h1>
-        </a>
-      </footer>
+    <h1>The Page is Under Construction</h1>
+    
     </>
   );
 };

@@ -8,7 +8,10 @@ import slide4 from "/public/slide4.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Navigation from "../Component/Navigation";
+import { Col, Row } from 'antd';
+import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+
 const index = () => {
   return (
     <div>
@@ -32,20 +35,52 @@ const index = () => {
         </Carousel>
         <Button className='btn1' size='lg' variant="outline-primary">Start for free</Button>{' '}
       </div>
-
-      {/* <footer className={styles.footer}>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Built on
-          <span className={styles.logo}>
-            <Image src="/replit.svg" alt="Replit Logo" width={20} height={18} />
-          </span>
-          Sayed Tabish
-        </a>
-      </footer>  */}
     </div>
+
+    <Row>
+      <Col className='card1' span={8}>
+      <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="/e426702edf874b181aced1e2fa5c6cde.gif" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+      </Col>
+
+      <Col className='card2' span={8}>
+      <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="../../public/Assest/02f73b4809ae455cbda8ef285c7a46f4.gif" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    </Col>
+      
+      <Col className='card3' span={8}>
+      <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="../../public/Assest/5eKX.gif" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+    </Col>
+    </Row> 
+
     </div>
   )
 }

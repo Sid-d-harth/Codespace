@@ -1,5 +1,5 @@
-import Navigation from "./Component/Navigation";
-
+import Navigation from "../Component/Navigation";
+import Link from 'next/link';
 const index = () => {
   return (
     <div>

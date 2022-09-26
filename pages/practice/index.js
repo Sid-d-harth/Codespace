@@ -1,4 +1,4 @@
-import Navigation from "./Component/Navigation";
+import Navigation from "../Component/Navigation";
 import Link from 'next/link';
 
 const Practice = () => {
