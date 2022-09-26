@@ -8,13 +8,14 @@ import slide4 from "/public/slide4.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Navigation from "../Component/Navigation";
+import Button from 'react-bootstrap/Button';
 const index = () => {
   return (
     <div>
         <div>
       <Navigation />
       <div className='overlay'></div>
-      <div>
+      <div className='main-screen'>
       <Carousel>
           <Carousel.Item interval={2250}>
             <Image src={slide1} alt="First slide" />
@@ -29,6 +30,7 @@ const index = () => {
             <Image src={slide4} alt="Fourth slide" />
           </Carousel.Item>
         </Carousel>
+        <Button className='btn1' size='lg' variant="outline-primary">Start for free</Button>{' '}
       </div>
 
       {/* <footer className={styles.footer}>

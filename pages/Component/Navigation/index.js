@@ -52,7 +52,9 @@ const Navigation = () => {
               size='sm'
               aria-label="Search"
             />
+            <div className="searchbutton">
             <Button variant="primary" size='sm'>Search</Button>{' '}
+            </div>
           </Form>
         </Navbar.Collapse>
       </Container>
