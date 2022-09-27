@@ -42,7 +42,7 @@ const index = () => {
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="/e426702edf874b181aced1e2fa5c6cde.gif" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Card 1</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -56,7 +56,7 @@ const index = () => {
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="../../public/Assest/02f73b4809ae455cbda8ef285c7a46f4.gif" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Card 2</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
