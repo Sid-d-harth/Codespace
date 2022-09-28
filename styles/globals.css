@@ -32,7 +32,7 @@ a {
   margin: 3% auto;
   box-shadow: 2px 18px 70px 0px #9d9d9d;
   border-radius: 0.5rem;
-  background-color: #000000;
+  background-color: #15294095;
 }
 
 .card1 {
@@ -53,14 +53,16 @@ a {
 
 .hd2 {
   font-size: 40px;
-  top: 100%;
+  color: beige;
 }
 
 .par1 {
   text-align: left;
   width: 500px;
+  color: #9d9d9d;
 }
 
 .ide {
   padding-left: 2%;
+  background-color: #000000;
 }

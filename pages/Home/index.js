@@ -4,7 +4,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions } from "@mui/material";
 import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
+import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -42,9 +42,9 @@ const index = () => {
               <Image src={slide4} alt="Fourth slide" />
             </Carousel.Item>
           </Carousel>
-          <Button className="btn1" size="lg" variant="outline-primary">
-            Start for free
-          </Button>{" "}
+          <Button className="btn1" variant="outlined">
+            Start For Free!
+          </Button>
         </div>
       </div>
 
@@ -140,7 +140,7 @@ const index = () => {
           components.
         </p>
         <div className="btn5">
-          <Button variant="contained" endIcon={<SendIcon />}>
+          <Button variant="contained" endIcon={<ArrowForwardIos />}>
             Get Started
           </Button>
         </div>
