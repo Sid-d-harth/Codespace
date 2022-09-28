@@ -127,22 +127,23 @@ const index = () => {
       </div>
 
       <div className="ide">
-        <h1 className="hd1">Move faster</h1>
-        <h1>
+        <p className="hd1">Move faster</p>
+        <p className="hd2">
           with intuitive
           <br />
           Codespace IDE
-        </h1>
-        <p>
+        </p>
+        <p className="par1">
           MUI offers a comprehensive suite of UI tools to help you ship new
           features faster. Start with Material UI, our fully-loaded component
           library, or bring your own design system to our production-ready
           components.
         </p>
-
-        <Button variant="contained" endIcon={<SendIcon />}>
-          Send
-        </Button>
+        <div className="btn5">
+          <Button variant="contained" endIcon={<SendIcon />}>
+            Get Started
+          </Button>
+        </div>
       </div>
     </div>
   );

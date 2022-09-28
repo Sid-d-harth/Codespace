@@ -46,5 +46,21 @@ a {
 }
 
 .hd1 {
-  text-decoration-color: cadetblue;
+  color: rgb(48, 99, 167);
+  font-size: 45px;
+  padding-top: 2px;
+}
+
+.hd2 {
+  font-size: 40px;
+  top: 100%;
+}
+
+.par1 {
+  text-align: left;
+  width: 500px;
+}
+
+.ide {
+  padding-left: 2%;
 }
